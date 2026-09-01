@@ -15,7 +15,7 @@ da copyright: solo metadati (titolo, anno, id di riferimento incrociati).
 
 ## File
 
-`sc_index.json`
+`catalog_index.json`
 
 ```jsonc
 {
@@ -43,11 +43,11 @@ da copyright: solo metadati (titolo, anno, id di riferimento incrociati).
 
 ## Consumo
 
-Scaricare `sc_index.json` via HTTP GET condizionale
+Scaricare `catalog_index.json` via HTTP GET condizionale
 (`If-None-Match`/`If-Modified-Since`) su:
 
 ```
-https://raw.githubusercontent.com/MPinzauti/streamplus-catalog-index/main/sc_index.json
+https://raw.githubusercontent.com/MPinzauti/streamplus-catalog-index/main/catalog_index.json
 ```
 
 Un `304 Not Modified` significa che l'indice locale è già aggiornato,
